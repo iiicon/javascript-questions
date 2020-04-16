@@ -22,7 +22,7 @@ const person = {
 <summary><b>Answer</b></summary>
 <p>
 
-#### Answer: D
+#### Answer: C
 
 ```js
 var person = {
