@@ -13,10 +13,10 @@ const person = {
 
 使得 `[...person]` 能输出 `["Lydia Hallie",21]`
 
-- A: `Lydia` and `undefined`
-- B: `Lydia` and `ReferenceError`
-- C: `ReferenceError` and `21`
-- D: `undefined` and `ReferenceError`
+- A: Nothing, object are iterable by default
+- B: *[Symbol.iterator]() { for (let x in this) yield* this[x] }
+- C: *[Symbol.iterator]() { yield* Object.values(this) }
+- D: *[Symbol.iterator]() { for (let x in this) yield this }
 
 <details>
 <summary><b>Answer</b></summary>
