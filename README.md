@@ -37,3 +37,29 @@ var person = {
 
 </p>
 </details>
+
+
+## 函数输出
+
+```js
+const add = x => x + x;
+
+function myFunc(num = 2, value = add(num)) {
+  console.log(num, value);
+}
+
+myFunc();
+myFunc(3);
+```
+
+- A: 2 4 and 3 6
+- B: 2 NaN and 3 NaN
+- C: 2 Error and 3 6
+- D: 2 4 and 3 Error
+
+<detail>
+<summary>
+<strong>Answer</strong>  
+</summary> 
+<p>太简单了点</p>
+</detail>
